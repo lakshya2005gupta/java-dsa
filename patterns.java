@@ -1,7 +1,7 @@
 public class patterns {
     public static void main(String[] args) {
         
-        pattern.p5(6);
+        pattern.p6(6);
 
     }
     
@@ -68,4 +68,52 @@ class pattern {
     
             }
         }
+    static void p28 (int n){
+            for (int i = 1; i<=((2*n)-1) ; i++) {
+                int c;
+                if (i > n) { 
+                    c = 2 *n - i ;
+                }
+                else {
+                    c = i;
+                }
+                int noofspaces = n-c;
+                for (int k = 1; k <= noofspaces; k++) {
+                    System.out.print(" ");
+                }
+
+                for (int j = 1; j <=c; j++){
+                    System.out.print("* ");
+
+                }
+            System.out.println();
+    
+            }
+        }
+    static void p6 (int n){
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n-i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
+  
+        }
+    }
+    static void p8 (int n){
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n-i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            
+            System.out.println();
+  
+        }
+    }
 }
