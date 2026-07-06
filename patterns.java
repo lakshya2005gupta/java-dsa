@@ -1,12 +1,3 @@
-public class patterns {
-    public static void main(String[] args) {
-        
-        pattern.p6(6);
-
-    }
-    
-}
-
 class pattern {
     static void p1(int n) {
         for (int row = 1; row <= n; row++){
@@ -103,17 +94,37 @@ class pattern {
   
         }
     }
-    static void p8 (int n){
+    static void p7 (int n){
         for (int i = 1; i <= n; i++) {
-            for (int s = 1; s <= n-i; s++) {
+            for (int s = 1 ; s <= i-1; s++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= i; j++) {
-                System.out.print("* ");
+            for (int j = 1; j <= n-i+1; j++) {
+                System.out.print("*");
             }
             
             System.out.println();
   
         }
     }
+    static void p10 (int n){
+        for (int i = 1; i <= n; i++) {
+            for (int s = 1; s <= n-i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            
+            
+            System.out.println();
+        }
+    }
+}
+public class patterns {
+    public static void main(String[] args) {
+        
+        pattern.p7(6);
+
+    }
+    
 }
