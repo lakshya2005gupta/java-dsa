@@ -123,7 +123,7 @@ class pattern {
 public class patterns {
     public static void main(String[] args){
         
-        pattern.p7(6)
+        pattern.p7(6);
 
     }
     
