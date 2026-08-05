@@ -12,4 +12,4 @@ public class is_prime {
             }
         }
     }
-}5
+}
