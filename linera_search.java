@@ -24,13 +24,30 @@ static int twoD(int [][] arr){
     }
     return minnum;
 }
+static int odd(int [] arr){
+     int count = 0;
+    for (int i = 0; i < arr.length; i++) {
+        int temp = arr[i] ;
+        int digitcount = 0;
+        while ( temp > 0) {
+            temp = temp/10;
+            digitcount ++;
+
+        }
+    
+        if ( digitcount % 2 != 0){
+            count ++;
+        }       
+    }
+return count;
+}
         
 }
 
 public class linera_search{
     public static void main(String[] args) {
-        int [][] arr = {{3, 5, 7, 8, },{4,8,9,23},{90,18,392,55}};
-        System.out.println(liner.twoD(arr));
+        int []arr = {333, 555, 5, 3,};
+        System.out.println(liner.odd(arr));
 
 
     }
